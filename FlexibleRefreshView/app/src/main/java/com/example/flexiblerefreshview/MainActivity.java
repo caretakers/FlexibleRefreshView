@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.libflexiblerefreshview.PullRefreashLayout;
+import com.example.libflexiblerefreshview.FlexibleRefreshLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,14 +18,14 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private ListView lv;
     private RefreshAdapter refreshAdapter;
-    private PullRefreashLayout prl;
+    private FlexibleRefreshLayout prl;
     private List<String> lists;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        prl = (PullRefreashLayout) findViewById(R.id.prl);
+        prl = (FlexibleRefreshLayout) findViewById(R.id.prl);
         lv = (ListView) findViewById(R.id.lv);
         lists = new ArrayList<>();
         for (int i = 0; i<16; i++){
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        prl.setOnRefreashingListener(new PullRefreashLayout.OnRefreashingListener() {
+        prl.setOnRefreashingListener(new FlexibleRefreshLayout.OnRefreashingListener() {
             @Override
             public void refreashing() {
                 Log.i(TAG, "refreashing: ");

@@ -22,7 +22,7 @@ import android.view.animation.LinearInterpolator;
  * Created by Anymo on 2018/6/19.
  */
 
-public class PullRefreshView extends View {
+public class FlexibleRefreshView extends View {
 
     private static final String TAG = "PullRefreshView";
     private Paint mPaint;
@@ -77,7 +77,7 @@ public class PullRefreshView extends View {
     private ValueAnimator mBackAnimator;
     private ValueAnimator mCircleRiseAnimator;
 
-    public PullRefreshView(Context context, int startAngle, int radiusRound, int radius, int maxHeaderView) {
+    public FlexibleRefreshView(Context context, int startAngle, int radiusRound, int radius, int maxHeaderView) {
         this(context, null);
         this.startAngle = startAngle;
         this.radiusRound = radiusRound;
@@ -85,11 +85,11 @@ public class PullRefreshView extends View {
         this.maxHeaderView = maxHeaderView;
     }
 
-    public PullRefreshView(Context context, @Nullable AttributeSet attrs) {
+    public FlexibleRefreshView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public PullRefreshView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public FlexibleRefreshView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mPath = new Path();
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);

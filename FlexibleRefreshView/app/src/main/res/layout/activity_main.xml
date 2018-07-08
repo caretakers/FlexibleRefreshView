@@ -6,21 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.libflexiblerefreshview.PullRefreashLayout
+    <com.example.libflexiblerefreshview.FlexibleRefreshLayout
         android:id="@+id/prl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:StartAngle="-90"
-        app:RadiusRound="110"
+        app:MaxheaderView="300"
         app:Radius="100"
-        app:MaxheaderView="300">
+        app:RadiusRound="110"
+        app:StartAngle="-90">
 
         <ListView
             android:id="@+id/lv"
-            android:dividerHeight="0dp"
-            android:background="#ffffffff"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></ListView>
-    </com.example.libflexiblerefreshview.PullRefreashLayout>
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:dividerHeight="0dp"></ListView>
+    </com.example.libflexiblerefreshview.FlexibleRefreshLayout>
 
 </RelativeLayout>
