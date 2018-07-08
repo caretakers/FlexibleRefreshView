@@ -5,7 +5,7 @@ Just a refresh demo<br>
 ![](https://i.imgur.com/gFObFlZ.gif)
 
 # 使用方法 #
-#第一步#
+## 第一步 ##
 Project.gradle中添加<br>
 
 allprojects {<br>
@@ -19,7 +19,7 @@ app.gradle中添加<br>
 dependencies {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;implementation 'com.github.fengmo94:AnymoRefreshView:V0.9'<br>
 }
-##第二步
+## 第二步 ##
 布局添加,PullRefreashLayout内部必须包含一个控件，否则无效果，会报错：<br> 
  MaxheaderView header最大宽度<br> 
 Radius 用的半径<br>
