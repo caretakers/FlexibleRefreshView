@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PullRefreashLayout">
+        <attr name="StartAngle" format="integer" />
+        <attr name="RadiusRound" format="integer" />
+        <attr name="Radius" format="integer"/>
+        <attr name="MaxheaderView" format="integer"/>
+    </declare-styleable>
+</resources>
