@@ -1,4 +1,4 @@
-# AnymoRefreshView
+# FlexibleRefreshView
 Just a refresh demo<br>
 一个简单的弹性下拉刷新控件，还未用于实际项目中，欢迎大家一起帮助完善此控件。
 
